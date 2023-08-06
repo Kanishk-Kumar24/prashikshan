@@ -1,6 +1,53 @@
-.ll{
-    text-align: left;
+.ll {
+  text-align: left;
 }
-.form{
-    padding: 10%20%0%20%;
+.form {
+  padding: 10%20%0%20%;
+  
+}
+body {
+  
+
+  background: url("pexels-todd-trapani-1385056.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 10%;
+  padding: 5%;
+  background-color: rgb(180, 200, 209);
+}
+.nav {
+  padding: 1%;
+}
+.col {
+  background-color: white;
+
+  padding: 2%;
+  border-radius: 2%;
+}
+.list-decoration {
+  padding: 5%;
+  text-decoration: none;
+  margin: 1%;
+  text-align: center;
+}
+.gray {
+  background-color: rgb(230, 217, 217);
+}
+.state1 {
+  background-color: rgb(183, 231, 183);
+  border-radius: 20%;
+}
+.state2 {
+  background-color: rgb(240, 241, 136);
+  border-radius: 20%;
+}
+.state3 {
+  background-color: rgb(241, 136, 136);
+  border-radius: 20%;
 }
