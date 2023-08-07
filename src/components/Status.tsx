@@ -1,8 +1,14 @@
-import React from "react";
+import Navbar from "./Navbar";
+import Box from "@mui/material/Box";
+
 
 const status = () => {
   return (
-    <div className="container-fluid">
+    <>
+     <Box sx={{ display: "flex" }}>
+        <Navbar />
+        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        <div className="container-fluid">
       <div className="row col">
         <div className="col-lg-3 ">
           <h2>Order</h2>
@@ -62,6 +68,13 @@ const status = () => {
         </div>
       </div>
     </div>
+        </Box>
+      </Box>
+
+
+
+    
+    </>
   );
 };
 

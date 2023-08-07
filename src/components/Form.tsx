@@ -1,9 +1,14 @@
+import Navbar from "./Navbar";
+import Box from "@mui/material/Box";
+
 
 const Form = () => {
   return (
     <>
-
-      <div className="container-fluid form ">
+      <Box sx={{ display: "flex" }}>
+        <Navbar />
+        <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        <div className="container-fluid form ">
         <div className="col">
         <form className="row g-3">
           <div className="col-md-6">
@@ -96,6 +101,12 @@ const Form = () => {
       </div>
 
       </div>
+        </Box>
+      </Box>
+
+
+
+      
     </>
   );
 };
