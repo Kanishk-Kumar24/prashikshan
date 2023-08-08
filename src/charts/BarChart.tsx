@@ -12,21 +12,21 @@ export const data = [
       calc: "stringify",
     },
   ],
-  ["Copper", 8.94, "#b87333", null],
-  ["Silver", 10.49, "silver", null],
-  ["Gold", 19.3, "gold", null],
-  ["Platinum", 21.45, "color: #e5e4e2", null],
+  ["Approval level 1 Pendency", 4.94, "#b87333", null],
+  ["Approval level 2 Pendency", 12.49, "silver", null],
+  ["Rejected", 3, "gold", null],
+  ["Accepted", 8, "color: #e5e4e2", null],
 ];
 
 export const options = {
-  title: "Density of Precious Metals, in g/cm^3",
-  width: 600,
-  height: 400,
+  title: "Status of Materials requested in %",
+  width: 1100,
+  height: 550,
   bar: { groupWidth: "95%" },
   legend: { position: "none" },
 };
 
-export function App() {
+export default function BarChart() {
   return (
     <Chart
       chartType="BarChart"

@@ -12,6 +12,7 @@ import AutorenewIcon from "@mui/icons-material/Autorenew";
 import DoneAllIcon from "@mui/icons-material/DoneAll";
 import UnpublishedIcon from "@mui/icons-material/Unpublished";
 import AccordianDash from "./AccordianDash"
+import BarChart from "../charts/BarChart";
 
 
 
@@ -117,7 +118,7 @@ const Home = () => {
           <Grid container spacing={2}>
             <Grid item xs={8}>
               <Card sx={{ height: 60 + "vh" }}>
-                <CardContent></CardContent>
+                <CardContent><BarChart/></CardContent>
               </Card>
             </Grid>
             <Grid item xs={4}>

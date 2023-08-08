@@ -19,6 +19,7 @@
     "@types/react-swipeable-views-utils": "^0.13.4",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-countup": "^6.4.2",
     "react-dom": "^18.2.0",
     "react-google-charts": "^4.0.1",
     "react-router-dom": "^6.14.2",
