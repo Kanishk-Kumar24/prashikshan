@@ -16,7 +16,7 @@ h2 {
   font-weight: bold;
   margin: 10%;
   padding: 5%;
-  background-color: rgb(180, 200, 209);
+  background-color: rgb(240, 243, 245);
 }
 .nav {
   padding: 1%;
@@ -58,4 +58,9 @@ h2 {
 }
 .sec{
     height: 5%;
+}
+.bgcolor{
+  min-height: 100vh;
+  background: #ECEFF1;
+  background: linear-gradient(158deg, rgb(224,224,224)0%,rrgb(233,237,254)100%);
 }

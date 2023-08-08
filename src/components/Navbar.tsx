@@ -15,7 +15,10 @@ import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import { useNavigate } from "react-router-dom";
 import { useAppStore } from "../appStore";
-
+import OtherHousesIcon from '@mui/icons-material/OtherHouses';
+import FormatListNumberedRtlIcon from '@mui/icons-material/FormatListNumberedRtl';
+import FactCheckIcon from '@mui/icons-material/FactCheck';
+import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 const drawerWidth = 240;
 
 const openedMixin = (theme: Theme): CSSObject => ({
@@ -105,12 +108,42 @@ export default function Navbar() {
                   justifyContent: "center",
                 }}
               >
-                <InboxIcon />
+                <OtherHousesIcon/>
               </ListItemIcon>
               <ListItemText primary="Home" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
           </ListItem>
         </List>
+
+        <List>
+          <ListItem
+            disablePadding
+            sx={{ display: "block" }}
+            onClick={() => {
+              navigate("/");
+            }}
+          >
+            <ListItemButton
+              sx={{
+                minHeight: 48,
+                justifyContent: open ? "initial" : "center",
+                px: 2.5,
+              }}
+            >
+              <ListItemIcon
+                sx={{
+                  minWidth: 0,
+                  mr: open ? 3 : "auto",
+                  justifyContent: "center",
+                }}
+              >
+                <OtherHousesIcon/>
+              </ListItemIcon>
+              <ListItemText primary="Home" sx={{ opacity: open ? 1 : 0 }} />
+            </ListItemButton>
+          </ListItem>
+        </List>
+
 
         <List>
           <ListItem
@@ -134,7 +167,7 @@ export default function Navbar() {
                   justifyContent: "center",
                 }}
               >
-                <InboxIcon />
+                <FormatListNumberedRtlIcon />
               </ListItemIcon>
               <ListItemText primary="Form" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
@@ -162,7 +195,7 @@ export default function Navbar() {
                   justifyContent: "center",
                 }}
               >
-                <InboxIcon />
+                <FactCheckIcon/>
               </ListItemIcon>
               <ListItemText primary="Status" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
@@ -190,7 +223,7 @@ export default function Navbar() {
                   justifyContent: "center",
                 }}
               >
-                <InboxIcon />
+                <MiscellaneousServicesIcon/>
               </ListItemIcon>
               <ListItemText primary="Misc" sx={{ opacity: open ? 1 : 0 }} />
             </ListItemButton>
