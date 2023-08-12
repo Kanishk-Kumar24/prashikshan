@@ -1,7 +1,9 @@
 import Nav from "./Nav";
 import Navbar from "./Navbar";
 import Box from "@mui/material/Box";
+import { useNavigate } from "react-router-dom";
 
+// const navigate = useNavigate();
 const Form = () => {
   return (
     <>
@@ -100,7 +102,7 @@ const Form = () => {
                     </div>
                   </div>
                   <div className="col-12">
-                    <button type="submit" className="btn btn-primary">
+                    <button type="submit"  className="btn btn-primary">
                       Request for Approval 1
                     </button>
                   </div>
